@@ -1,12 +1,16 @@
-"""Erzeugt je Flotte eine README.md mit einer Tabelle: Kennzeichen x Optionen.
+"""Writes a README.md per fleet with a table: registration x option.
 
-Aufruf aus dem Repo-Wurzelordner: python tools/tabellen.py
+Values that differ from the fleet's most common value are marked, so it is
+easy to see which registration has a different config.
+
+Run from the repository root: python tools/tabellen.py
 """
 
 import re
+from collections import Counter
 from pathlib import Path
 
-FLOTTEN = {
+FLEETS = {
     "VL319": "Lufthansa City Airlines A319",
     "LH319": "Lufthansa A319",
     "LH320": "Lufthansa A320",
@@ -14,110 +18,139 @@ FLOTTEN = {
     "LH321": "Lufthansa A321",
 }
 
-AN, AUS = "✓", "–"
+ON, OFF = "✓", "–"
+MARK = "🟧"
 
 _alt = {"0": "+1000", "1": "+1500", "2": "+800"}
 
-# Klartext je Wert, laut https://support.fenixsim.com/hc/en-us/articles/12466593239567
-WERTE = {
-    "acp_type": {"0": "klassisch", "1": "modern"},
+# Readable value per option, see https://support.fenixsim.com/hc/en-us/articles/12466593239567
+VALUES = {
+    "acp_type": {"0": "classic", "1": "modern"},
     "adirs_type": {"0": "GNADIRS", "1": "ADIRS"},
     "baro_unit": {"0": "hPa", "1": "inHg"},
-    "cabin_ready_fwc_type": {"0": "keine", "1": "Checklist", "2": "Memo"},
-    "cdls_keypad_beep_enabled": {"0": AUS, "1": "beep", "2": "beep beep"},
+    "cabin_ready_fwc_type": {"0": "none", "1": "checklist", "2": "memo"},
+    "cdls_keypad_beep_enabled": {"0": OFF, "1": "beep", "2": "beep beep"},
     "channel_spacing_type": {"0": "25 kHz", "1": "8.33 kHz"},
     "default_acceleration_altitude_ft": {"0": "+1000", "1": "+1500", "2": "+3000"},
     "default_thrust_reduction_altitude_ft": _alt,
     "default_acceleration_altitude_engine_out_ft": _alt,
     "direct_to_default_abeam_enabled": {"0": "DCT", "1": "ABEAM PTS"},
-    "efb_mount_type": {"0": "Fenster", "1": "Rahmen"},
+    "efb_mount_type": {"0": "window", "1": "frame"},
     "electric_hydraulic_pump_type": {"0": "Vickers", "1": "Parker"},
-    "emergency_exits_type": {"0": "einfach", "1": "doppelt"},
+    "emergency_exits_type": {"0": "single", "1": "double"},
     "fap_slide_disarmed_message": {"0": "SLIDE DISARMED", "1": "SLIDE IN PARK"},
-    "front_window_type": {"0": "Fenster", "1": "Plug", "2": "Plug randlos"},
+    "front_window_type": {"0": "window", "1": "plug", "2": "rimless plug"},
     "go_around_nav_enabled": {"0": "GA TRK", "1": "NAV"},
     "iae_crank_type": {"0": "30 s", "1": "50 s"},
-    "isis_type": {"0": "alt", "1": "neu"},
-    "standby_type": {"0": "ISIS", "1": "analog"},
-    "start_pack_inhibit_type": {"0": "legacy", "1": "vor SB", "2": "mit SB"},
-    "takeoff_performance_packs_on_enabled": {"0": "Packs aus", "1": "Packs an"},
+    "isis_type": {"0": "old", "1": "new"},
+    "standby_type": {"0": "ISIS", "1": "analogue"},
+    "start_pack_inhibit_type": {"0": "legacy", "1": "before SB", "2": "with SB"},
+    "takeoff_performance_packs_on_enabled": {"0": "packs off", "1": "packs on"},
     "takeoff_shift_unit": {"0": "m", "1": "ft"},
     "weight_unit": {"0": "kg", "1": "lbs"},
-    "wifi_antenna_type": {"0": AUS, "1": "EU", "2": "US"},
-    "window_plug_type": {"0": "Fenster", "1": "Plug", "2": "Plug randlos"},
-    "wingbox_type": {"0": "alt", "1": "modern"},
-    "yellow_hydraulic_steering": {"0": "grün", "1": "gelb"},
-    "virtual_purser_cruise_cabin_lights_brightness_in_dark": {"0": "Off", "1": "DIM 2", "2": "DIM 1", "3": "BRT"},
-    "virtual_purser_keep_emer_exits_armed_for_turnaround": {"0": "alle entwaffnen", "1": "nur 1 + 4"},
+    "wifi_antenna_type": {"0": OFF, "1": "European", "2": "American"},
+    "window_plug_type": {"0": "window", "1": "plug", "2": "rimless plug"},
+    "wingbox_type": {"0": "old", "1": "modern"},
+    "yellow_hydraulic_steering": {"0": "green", "1": "yellow"},
+    "virtual_purser_cruise_cabin_lights_brightness_in_dark": {"0": "off", "1": "DIM 2", "2": "DIM 1", "3": "BRT"},
+    "virtual_purser_keep_emer_exits_armed_for_turnaround": {"0": "disarm all", "1": "only 1 + 4"},
 }
 
-# Ohne Klartext: 0/1 als Haken anzeigen, sonst den Rohwert
-ROH = {"act_count", "msn", "selcal_code", "airline_pack_custom_tags", "window_plug_list",
+# No readable value: show 0/1 as a tick, everything else raw
+RAW = {"act_count", "msn", "selcal_code", "airline_pack_custom_tags", "window_plug_list",
        "cabin_ready_type", "light_type"}
 
+TAGS = "required_tags"
 
-def lesen(pfad):
-    tags, optionen = "", {}
-    for zeile in pfad.read_text(encoding="utf-8-sig").splitlines():
-        m = re.match(r"\s*([A-Za-z0-9_]+)\s*=\s*(.*?)\s*$", zeile)
+
+def read(path):
+    options = {}
+    for line in path.read_text(encoding="utf-8-sig").splitlines():
+        m = re.match(r"\s*([A-Za-z0-9_]+)\s*=\s*(.*?)\s*$", line)
         if not m:
             continue
-        name, wert = m.group(1), m.group(2).strip('"')
-        if name == "required_tags":
-            tags = wert
+        name, value = m.group(1), m.group(2).strip('"')
+        if name == TAGS:
+            options[TAGS] = value
         elif name.startswith("fnx_"):
-            optionen[name[4:]] = wert
-    return tags, optionen
+            options[name[4:]] = value
+    return options
 
 
-def zelle(name, wert):
-    if wert is None:
+def cell(name, value):
+    if value is None:
         return ""
-    if name in WERTE:
-        return WERTE[name].get(wert, f"`{wert}`")
-    if name not in ROH and wert in ("0", "1"):
-        return AN if wert == "1" else AUS
-    return f"`{wert}`" if wert else ""
+    if name == TAGS:
+        return value
+    if name in VALUES:
+        return VALUES[name].get(value, f"`{value}`")
+    if name not in RAW and value in ("0", "1"):
+        return ON if value == "1" else OFF
+    return f"`{value}`" if value else ""
 
 
-def tabelle(ordner, titel):
-    daten = {d.name: lesen(d / "livery.cfg") for d in sorted(ordner.iterdir()) if (d / "livery.cfg").is_file()}
-    if not daten:
+def table(folder, title):
+    data = {d.name: read(d / "livery.cfg") for d in sorted(folder.iterdir()) if (d / "livery.cfg").is_file()}
+    if not data:
         return None
-    spalten = []
-    for _, opt in daten.values():
-        spalten += [n for n in opt if n not in spalten]
+    columns = [TAGS]
+    for opt in data.values():
+        columns += [n for n in opt if n not in columns]
 
-    kopf = ["Kennzeichen", "Tags"] + spalten
+    # Most common value per option; None counts as "not set"
+    common = {n: Counter(opt.get(n) for opt in data.values()).most_common(1)[0][0] for n in columns}
+    differs = {reg: [n for n in columns if opt.get(n) != common[n]] for reg, opt in data.items()}
+    varying = {n for d in differs.values() for n in d}
+
+    head = ["Registration"] + [f"{MARK} {n}" if n in varying else n for n in columns]
     out = [
-        f"# {ordner.name} – {titel}",
+        f"# {folder.name} – {title}",
         "",
-        "<!-- Automatisch erzeugt von tools/tabellen.py, nicht von Hand bearbeiten. -->",
+        "<!-- Generated by tools/tabellen.py, do not edit by hand. -->",
         "",
-        f"{len(daten)} Lackierungen. {AN} = an, {AUS} = aus, leer = nicht gesetzt (Fenix-Standard). "
-        "Spaltennamen ohne `fnx_`-Präfix. Bedeutung der Optionen: "
+        f"{len(data)} liveries. {ON} = on, {OFF} = off, empty = not set (Fenix default). "
+        "Column names without the `fnx_` prefix. Meaning of the options: "
         "[Fenix Livery Configuration Options](https://support.fenixsim.com/hc/en-us/articles/12466593239567-Livery-Configuration-Options)",
         "",
-        "| " + " | ".join(kopf) + " |",
-        "|" + "|".join([":--"] * 2 + [":-:"] * len(spalten)) + "|",
+        f"{MARK} marks a value that differs from the rest of the fleet (most common value), "
+        "plus the registration and the option it belongs to.",
+        "",
     ]
-    for reg, (tags, opt) in daten.items():
-        werte = [zelle(n, opt.get(n)) for n in spalten]
-        out.append("| " + " | ".join([f"[{reg}]({reg}/livery.cfg)", tags] + werte) + " |")
+
+    deviating = {reg: d for reg, d in differs.items() if d}
+    if deviating:
+        out += ["## Differences", "", "| Registration | Option | Value | Rest of fleet |", "|:--|:--|:--|:--|"]
+        for reg, names in deviating.items():
+            for n in names:
+                out.append(f"| {reg} | {n} | {cell(n, data[reg].get(n)) or 'not set'} | {cell(n, common[n]) or 'not set'} |")
+        out.append("")
+    else:
+        out += ["All registrations in this fleet share the same config.", ""]
+
+    out += ["## All options", "",
+            "| " + " | ".join(head) + " |",
+            "|" + "|".join([":--"] * 2 + [":-:"] * (len(columns) - 1)) + "|"]
+    for reg, opt in data.items():
+        name = f"{MARK} [{reg}]({reg}/livery.cfg)" if differs[reg] else f"[{reg}]({reg}/livery.cfg)"
+        values = []
+        for n in columns:
+            text = cell(n, opt.get(n))
+            values.append(f"{MARK} {text or 'not set'}" if n in differs[reg] else text)
+        out.append("| " + " | ".join([name] + values) + " |")
     return "\n".join(out) + "\n"
 
 
 def main():
-    wurzel = Path(__file__).resolve().parent.parent
-    for flotte, titel in FLOTTEN.items():
-        ordner = wurzel / flotte
-        md = tabelle(ordner, titel)
-        ziel = ordner / "README.md"
+    root = Path(__file__).resolve().parent.parent
+    for fleet, title in FLEETS.items():
+        folder = root / fleet
+        md = table(folder, title)
+        target = folder / "README.md"
         if md:
-            ziel.write_text(md, encoding="utf-8", newline="\n")
-            print(f"{flotte}: README.md geschrieben")
-        elif ziel.exists():
-            ziel.unlink()
+            target.write_text(md, encoding="utf-8", newline="\n")
+            print(f"{fleet}: README.md written")
+        elif target.exists():
+            target.unlink()
 
 
 if __name__ == "__main__":

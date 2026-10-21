@@ -1,8 +1,8 @@
 name: Downloads
 
-# Erzeugt bei jedem Push die Tabellen (README.md je Flotte), packt pro Flotte
-# ein Zip und legt es am Release "latest" ab.
-# Fester Link je Flotte: /releases/latest/download/<FLOTTE>.zip
+# On every push: generates the tables (README.md per fleet), builds one zip
+# per fleet and attaches it to the release "latest".
+# Fixed link per fleet: /releases/latest/download/<FLEET>.zip
 
 on:
   push:
@@ -22,18 +22,18 @@ jobs:
     steps:
       - uses: actions/checkout@v5
 
-      - name: Tabellen erzeugen
+      - name: Generate tables
         run: |
           python3 tools/tabellen.py
           git add -A -- '*/README.md'
           if ! git diff --cached --quiet; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git commit -m "Tabellen aktualisiert"
+            git commit -m "Update tables"
             git push
           fi
 
-      - name: Zips bauen
+      - name: Build zips
         run: |
           mkdir dist
           for d in VL319 LH319 LH320 4Y320 LH321; do
@@ -43,16 +43,16 @@ jobs:
           done
           ls -l dist
 
-      - name: Release "latest" aktualisieren
+      - name: Update release "latest"
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           git tag -f latest
           git push -f origin latest
-          notes="Stand $(date -u +%F), Commit $(git rev-parse --short HEAD). Je Flotte ein Zip mit einem Ordner pro Kennzeichen."
+          notes="As of $(date -u +%F), commit $(git rev-parse --short HEAD). One zip per fleet with one folder per registration."
           if gh release view latest > /dev/null 2>&1; then
-            gh release edit latest --notes "$notes"
+            gh release edit latest --title "Current configs" --notes "$notes"
           else
-            gh release create latest --title "Aktuelle Konfigurationen" --notes "$notes" --latest
+            gh release create latest --title "Current configs" --notes "$notes" --latest
           fi
           gh release upload latest dist/*.zip --clobber
