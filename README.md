@@ -10,6 +10,15 @@ Je Flotte ein Ordner, darin je Kennzeichen ein Ordner mit der `livery.cfg`:
 - `4Y320` - Discover Airlines A320
 - `LH321` - Lufthansa A321
 
+## Tabellen
+
+Je Flotte eine Übersicht aller Kennzeichen und Optionen:
+
+- [LH320](LH320/README.md) - Lufthansa A320
+- [4Y320](4Y320/README.md) - Discover Airlines A320
+
+Die Tabellen erzeugt `tools/tabellen.py` bei jedem Push automatisch.
+
 ## Download
 
 - [LH320.zip](https://github.com/LH-Virtual/fenix-aircraft-configs/releases/latest/download/LH320.zip) - Lufthansa A320
