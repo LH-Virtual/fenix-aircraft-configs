@@ -1,0 +1,46 @@
+name: Downloads
+
+# Packt bei jedem Push pro Flotte ein Zip und legt es am Release "latest" ab.
+# Fester Link je Flotte: /releases/latest/download/<FLOTTE>.zip
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: downloads
+  cancel-in-progress: true
+
+jobs:
+  zips:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Zips bauen
+        run: |
+          mkdir dist
+          for d in VL319 LH319 LH320 4Y320 LH321; do
+            if compgen -G "$d/*/livery.cfg" > /dev/null; then
+              (cd "$d" && zip -qr "../dist/$d.zip" . -x .gitkeep)
+            fi
+          done
+          ls -l dist
+
+      - name: Release "latest" aktualisieren
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git tag -f latest
+          git push -f origin latest
+          notes="Stand $(date -u +%F), Commit ${GITHUB_SHA::7}. Je Flotte ein Zip mit einem Ordner pro Kennzeichen."
+          if gh release view latest > /dev/null 2>&1; then
+            gh release edit latest --notes "$notes"
+          else
+            gh release create latest --title "Aktuelle Konfigurationen" --notes "$notes" --latest
+          fi
+          gh release upload latest dist/*.zip --clobber

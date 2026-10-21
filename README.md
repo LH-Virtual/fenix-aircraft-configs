@@ -10,4 +10,10 @@ Je Flotte ein Ordner, darin je Kennzeichen ein Ordner mit der `livery.cfg`:
 - `4Y320` - Discover Airlines A320
 - `LH321` - Lufthansa A321
 
+## Download
+
+- [4Y320.zip](https://github.com/LH-Virtual/fenix-aircraft-configs/releases/latest/download/4Y320.zip) - Discover Airlines A320
+
+Die Zips werden bei jedem Push automatisch neu gebaut. Je Kennzeichen liegt ein Ordner mit der `livery.cfg` drin; die Datei ersetzt die `livery.cfg` im Ordner der jeweiligen Lackierung.
+
 Optionen: https://support.fenixsim.com/hc/en-us/articles/12466593239567-Livery-Configuration-Options
