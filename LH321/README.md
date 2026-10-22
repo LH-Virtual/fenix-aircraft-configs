@@ -19,7 +19,6 @@
 | D-AIDX | isis_type | new | old |
 | D-AISH | rear_window_type | not set | – |
 | D-AISN | isis_type | new | old |
-| DAISZ | isis_type | not set | old |
 
 ## All options
 
@@ -56,4 +55,4 @@
 | [D-AISV](D-AISV/livery.cfg) | A321,IAE,WF,Cabin_A321_SingleClass | hPa | ✓ | ✓ | – | ✓ | – | +1000 | +1000 | +1500 | frame | – | ✓ | – | – | ✓ | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – |  | ISIS | m | kg | European | modern | – | `4047` | – | – | – | Vickers | yellow | NAV | ✓ | ✓ | – | modern | – | `1L, 1R, 2R` | plug | `0` | – | old | only 1 + 4 | off | – | – | checklist | SLIDE IN PARK | packs off | DCT | beep beep | ✓ | 8.33 kHz | ✓ | ADIRS | with SB | – | 30 s |
 | [D-AISW](D-AISW/livery.cfg) | A321,IAE,WF,Cabin_A321_SingleClass | hPa | ✓ | ✓ | – | ✓ | – | +1000 | +1000 | +1500 | frame | – | ✓ | – | – | ✓ | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – |  | ISIS | m | kg | European | modern | – | `4054` | – | – | – | Vickers | yellow | NAV | ✓ | ✓ | – | modern | – | `1L, 1R, 2R` | plug | `0` | – | old | only 1 + 4 | off | – | – | checklist | SLIDE IN PARK | packs off | DCT | beep beep | ✓ | 8.33 kHz | ✓ | ADIRS | with SB | – | 30 s |
 | [D-AISX](D-AISX/livery.cfg) | A321,IAE,WF,Cabin_A321_SingleClass | hPa | ✓ | ✓ | – | ✓ | – | +1000 | +1000 | +1500 | frame | – | ✓ | – | – | ✓ | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – |  | ISIS | m | kg | European | modern | – | `4073` | – | – | – | Vickers | yellow | NAV | ✓ | ✓ | – | modern | – | `1L, 1R, 2R` | plug | `0` | – | old | only 1 + 4 | off | – | – | checklist | SLIDE IN PARK | packs off | DCT | beep beep | ✓ | 8.33 kHz | ✓ | ADIRS | with SB | – | 30 s |
-| 🟧 [DAISZ](DAISZ/livery.cfg) | A321,IAE,WF,Cabin_A321_SingleClass | hPa | ✓ | ✓ | – | ✓ | – | +1000 | +1000 | +1500 | frame | – | ✓ | – | – | ✓ | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – |  | ISIS | m | kg | European | modern | – | `4085` | – | – | – | Vickers | yellow | NAV | ✓ | ✓ | – | modern | – | `1L, 1R, 2R` | plug | `0` | – | 🟧 not set | only 1 + 4 | off | – | – | checklist | SLIDE IN PARK | packs off | DCT | beep beep | ✓ | 8.33 kHz | ✓ | ADIRS | with SB | – | 30 s |
+| [DAISZ](DAISZ/livery.cfg) | A321,IAE,WF,Cabin_A321_SingleClass | hPa | ✓ | ✓ | – | ✓ | – | +1000 | +1000 | +1500 | frame | – | ✓ | – | – | ✓ | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | – |  | ISIS | m | kg | European | modern | – | `4085` | – | – | – | Vickers | yellow | NAV | ✓ | ✓ | – | modern | – | `1L, 1R, 2R` | plug | `0` | – | old | only 1 + 4 | off | – | – | checklist | SLIDE IN PARK | packs off | DCT | beep beep | ✓ | 8.33 kHz | ✓ | ADIRS | with SB | – | 30 s |
