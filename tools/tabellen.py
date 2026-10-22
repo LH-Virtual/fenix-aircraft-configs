@@ -62,6 +62,9 @@ RAW = {"act_count", "msn", "selcal_code", "airline_pack_custom_tags", "window_pl
 
 TAGS = "required_tags"
 
+# Unique per airframe, never marked as a difference
+PER_AIRCRAFT = {"msn", "selcal_code"}
+
 
 def read(path):
     options = {}
@@ -99,7 +102,8 @@ def table(folder, title):
 
     # Most common value per option; None counts as "not set"
     common = {n: Counter(opt.get(n) for opt in data.values()).most_common(1)[0][0] for n in columns}
-    differs = {reg: [n for n in columns if opt.get(n) != common[n]] for reg, opt in data.items()}
+    differs = {reg: [n for n in columns if n not in PER_AIRCRAFT and opt.get(n) != common[n]]
+               for reg, opt in data.items()}
     varying = {n for d in differs.values() for n in d}
 
     head = ["Registration"] + [f"{MARK} {n}" if n in varying else n for n in columns]
