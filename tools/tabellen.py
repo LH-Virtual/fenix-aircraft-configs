@@ -29,7 +29,8 @@ VALUES = {
     "adirs_type": {"0": "GNADIRS", "1": "ADIRS"},
     "baro_unit": {"0": "hPa", "1": "inHg"},
     "cabin_ready_fwc_type": {"0": "none", "1": "checklist", "2": "memo"},
-    "cdls_keypad_beep_enabled": {"0": OFF, "1": "beep", "2": "beep beep"},
+    # Documented as fnx_cdls_keypad_beep_enabled, but Fenix reads fnx_cdls_keypad_beep_type
+    "cdls_keypad_beep_type": {"0": OFF, "1": "beep", "2": "beep beep"},
     "channel_spacing_type": {"0": "25 kHz", "1": "8.33 kHz"},
     "default_acceleration_altitude_ft": {"0": "+1000", "1": "+1500", "2": "+3000"},
     "default_thrust_reduction_altitude_ft": _alt,
