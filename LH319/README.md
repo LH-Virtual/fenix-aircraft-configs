@@ -10,114 +10,114 @@
 
 | Registration | Option | Value | Rest of fleet |
 |:--|:--|:--|:--|
-| D-AIBA | acp_type | modern | classic |
-| D-AIBA | adirs_type | ADIRS | GNADIRS |
-| D-AIBA | dcdu_enabled | ✓ | – |
-| D-AIBA | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBA | isis_type | old | new |
-| D-AIBA | standby_type | ISIS | analogue |
-| D-AIBA | wingbox_type | modern | old |
-| D-AIBA | cabin_ready_fwc_type | checklist | none |
-| D-AIBA | buss_enabled | ✓ | – |
-| D-AIBB | acp_type | modern | classic |
-| D-AIBB | adirs_type | ADIRS | GNADIRS |
-| D-AIBB | dcdu_enabled | ✓ | – |
-| D-AIBB | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBB | isis_type | old | new |
-| D-AIBB | standby_type | ISIS | analogue |
-| D-AIBB | wingbox_type | modern | old |
-| D-AIBB | cabin_ready_fwc_type | checklist | none |
-| D-AIBB | buss_enabled | ✓ | – |
-| D-AIBC | acp_type | modern | classic |
-| D-AIBC | adirs_type | ADIRS | GNADIRS |
-| D-AIBC | dcdu_enabled | ✓ | – |
-| D-AIBC | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBC | isis_type | old | new |
-| D-AIBC | standby_type | ISIS | analogue |
-| D-AIBC | wingbox_type | modern | old |
-| D-AIBC | cabin_ready_fwc_type | checklist | none |
-| D-AIBC | buss_enabled | ✓ | – |
-| D-AIBD | acp_type | modern | classic |
-| D-AIBD | adirs_type | ADIRS | GNADIRS |
-| D-AIBD | dcdu_enabled | ✓ | – |
-| D-AIBD | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBD | isis_type | old | new |
-| D-AIBD | standby_type | ISIS | analogue |
-| D-AIBD | wingbox_type | modern | old |
-| D-AIBD | cabin_ready_fwc_type | checklist | none |
-| D-AIBD | buss_enabled | ✓ | – |
-| D-AIBE | acp_type | modern | classic |
-| D-AIBE | adirs_type | ADIRS | GNADIRS |
-| D-AIBE | dcdu_enabled | ✓ | – |
-| D-AIBE | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBE | isis_type | old | new |
-| D-AIBE | standby_type | ISIS | analogue |
-| D-AIBE | wingbox_type | modern | old |
-| D-AIBE | cabin_ready_fwc_type | checklist | none |
-| D-AIBE | buss_enabled | ✓ | – |
-| D-AIBF | acp_type | modern | classic |
-| D-AIBF | adirs_type | ADIRS | GNADIRS |
-| D-AIBF | dcdu_enabled | ✓ | – |
-| D-AIBF | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBF | standby_type | ISIS | analogue |
-| D-AIBF | wingbox_type | modern | old |
-| D-AIBF | cabin_ready_fwc_type | checklist | none |
-| D-AIBF | buss_enabled | ✓ | – |
-| D-AIBG | acp_type | modern | classic |
-| D-AIBG | adirs_type | ADIRS | GNADIRS |
-| D-AIBG | dcdu_enabled | ✓ | – |
-| D-AIBG | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBG | standby_type | ISIS | analogue |
-| D-AIBG | wingbox_type | modern | old |
-| D-AIBG | cabin_ready_fwc_type | checklist | none |
-| D-AIBG | buss_enabled | ✓ | – |
-| D-AIBH | acp_type | modern | classic |
-| D-AIBH | adirs_type | ADIRS | GNADIRS |
-| D-AIBH | dcdu_enabled | ✓ | – |
-| D-AIBH | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBH | standby_type | ISIS | analogue |
-| D-AIBH | wingbox_type | modern | old |
-| D-AIBH | cabin_ready_fwc_type | checklist | none |
-| D-AIBH | buss_enabled | ✓ | – |
-| D-AIBI | acp_type | modern | classic |
-| D-AIBI | adirs_type | ADIRS | GNADIRS |
-| D-AIBI | dcdu_enabled | ✓ | – |
-| D-AIBI | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBI | standby_type | ISIS | analogue |
-| D-AIBI | wingbox_type | modern | old |
-| D-AIBI | cabin_ready_fwc_type | checklist | none |
-| D-AIBI | buss_enabled | ✓ | – |
-| D-AIBJ | acp_type | modern | classic |
-| D-AIBJ | adirs_type | ADIRS | GNADIRS |
-| D-AIBJ | dcdu_enabled | ✓ | – |
-| D-AIBJ | go_around_nav_enabled | NAV | GA TRK |
-| D-AIBJ | standby_type | ISIS | analogue |
-| D-AIBJ | wingbox_type | modern | old |
-| D-AIBJ | cabin_ready_fwc_type | checklist | none |
-| D-AIBJ | buss_enabled | ✓ | – |
+| DAIBA | acp_type | modern | classic |
+| DAIBA | adirs_type | ADIRS | GNADIRS |
+| DAIBA | dcdu_enabled | ✓ | – |
+| DAIBA | go_around_nav_enabled | NAV | GA TRK |
+| DAIBA | isis_type | old | new |
+| DAIBA | standby_type | ISIS | analogue |
+| DAIBA | wingbox_type | modern | old |
+| DAIBA | cabin_ready_fwc_type | checklist | none |
+| DAIBA | buss_enabled | ✓ | – |
+| DAIBB | acp_type | modern | classic |
+| DAIBB | adirs_type | ADIRS | GNADIRS |
+| DAIBB | dcdu_enabled | ✓ | – |
+| DAIBB | go_around_nav_enabled | NAV | GA TRK |
+| DAIBB | isis_type | old | new |
+| DAIBB | standby_type | ISIS | analogue |
+| DAIBB | wingbox_type | modern | old |
+| DAIBB | cabin_ready_fwc_type | checklist | none |
+| DAIBB | buss_enabled | ✓ | – |
+| DAIBC | acp_type | modern | classic |
+| DAIBC | adirs_type | ADIRS | GNADIRS |
+| DAIBC | dcdu_enabled | ✓ | – |
+| DAIBC | go_around_nav_enabled | NAV | GA TRK |
+| DAIBC | isis_type | old | new |
+| DAIBC | standby_type | ISIS | analogue |
+| DAIBC | wingbox_type | modern | old |
+| DAIBC | cabin_ready_fwc_type | checklist | none |
+| DAIBC | buss_enabled | ✓ | – |
+| DAIBD | acp_type | modern | classic |
+| DAIBD | adirs_type | ADIRS | GNADIRS |
+| DAIBD | dcdu_enabled | ✓ | – |
+| DAIBD | go_around_nav_enabled | NAV | GA TRK |
+| DAIBD | isis_type | old | new |
+| DAIBD | standby_type | ISIS | analogue |
+| DAIBD | wingbox_type | modern | old |
+| DAIBD | cabin_ready_fwc_type | checklist | none |
+| DAIBD | buss_enabled | ✓ | – |
+| DAIBE | acp_type | modern | classic |
+| DAIBE | adirs_type | ADIRS | GNADIRS |
+| DAIBE | dcdu_enabled | ✓ | – |
+| DAIBE | go_around_nav_enabled | NAV | GA TRK |
+| DAIBE | isis_type | old | new |
+| DAIBE | standby_type | ISIS | analogue |
+| DAIBE | wingbox_type | modern | old |
+| DAIBE | cabin_ready_fwc_type | checklist | none |
+| DAIBE | buss_enabled | ✓ | – |
+| DAIBF | acp_type | modern | classic |
+| DAIBF | adirs_type | ADIRS | GNADIRS |
+| DAIBF | dcdu_enabled | ✓ | – |
+| DAIBF | go_around_nav_enabled | NAV | GA TRK |
+| DAIBF | standby_type | ISIS | analogue |
+| DAIBF | wingbox_type | modern | old |
+| DAIBF | cabin_ready_fwc_type | checklist | none |
+| DAIBF | buss_enabled | ✓ | – |
+| DAIBG | acp_type | modern | classic |
+| DAIBG | adirs_type | ADIRS | GNADIRS |
+| DAIBG | dcdu_enabled | ✓ | – |
+| DAIBG | go_around_nav_enabled | NAV | GA TRK |
+| DAIBG | standby_type | ISIS | analogue |
+| DAIBG | wingbox_type | modern | old |
+| DAIBG | cabin_ready_fwc_type | checklist | none |
+| DAIBG | buss_enabled | ✓ | – |
+| DAIBH | acp_type | modern | classic |
+| DAIBH | adirs_type | ADIRS | GNADIRS |
+| DAIBH | dcdu_enabled | ✓ | – |
+| DAIBH | go_around_nav_enabled | NAV | GA TRK |
+| DAIBH | standby_type | ISIS | analogue |
+| DAIBH | wingbox_type | modern | old |
+| DAIBH | cabin_ready_fwc_type | checklist | none |
+| DAIBH | buss_enabled | ✓ | – |
+| DAIBI | acp_type | modern | classic |
+| DAIBI | adirs_type | ADIRS | GNADIRS |
+| DAIBI | dcdu_enabled | ✓ | – |
+| DAIBI | go_around_nav_enabled | NAV | GA TRK |
+| DAIBI | standby_type | ISIS | analogue |
+| DAIBI | wingbox_type | modern | old |
+| DAIBI | cabin_ready_fwc_type | checklist | none |
+| DAIBI | buss_enabled | ✓ | – |
+| DAIBJ | acp_type | modern | classic |
+| DAIBJ | adirs_type | ADIRS | GNADIRS |
+| DAIBJ | dcdu_enabled | ✓ | – |
+| DAIBJ | go_around_nav_enabled | NAV | GA TRK |
+| DAIBJ | standby_type | ISIS | analogue |
+| DAIBJ | wingbox_type | modern | old |
+| DAIBJ | cabin_ready_fwc_type | checklist | none |
+| DAIBJ | buss_enabled | ✓ | – |
 
 ## All options
 
 | Registration | required_tags | 🟧 acp_type | 🟧 adirs_type | baro_unit | brake_fans_enabled | bulk_cargo_enabled | cargo_heat_enabled | 🟧 dcdu_enabled | ddrmi_enabled | default_acceleration_altitude_ft | default_thrust_reduction_altitude_ft | default_acceleration_altitude_engine_out_ft | efb_mount_type | fls_enabled | front_window_type | 🟧 go_around_nav_enabled | hubcaps_enabled | rear_window_type | gpws2500 | gpws2500b | gpws2000 | gpws1000 | gpws500 | gpws500_glide_deviation | gpws400 | gpws300 | gpws200 | gpws100 | gpws50 | gpws40 | gpws30 | gpws20 | gpws10 | gpws5 | ice_detection_enabled | 🟧 isis_type | lateral_deviation_scales_enabled | metric_standby_enabled | noise_package_enabled | emergency_exits_type | yellow_hydraulic_steering | registration_panel_enabled | 🟧 standby_type | takeoff_shift_unit | tcas_ap_enabled | tpis_enabled | weight_unit | wifi_antenna_type | 🟧 wingbox_type | ac_ess_auto_switching_enabled | 🟧 cabin_ready_fwc_type | electric_hydraulic_pump_type | custom_models | virtual_purser_keep_emer_exits_armed_for_turnaround | virtual_purser_cruise_cabin_lights_brightness_in_dark | virtual_purser_lock_lavatories_during_refueling | cabin_ready_call_enabled | fap_slide_disarmed_message | takeoff_performance_packs_on_enabled | direct_to_default_abeam_enabled | cdls_keypad_beep_type | msn | 🟧 buss_enabled | channel_spacing_type | non_smoker_enabled | start_pack_inhibit_type | single_engine_taxi_without_apu_enabled |
 |:--|:--|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
-| 🟧 [D-AIBA](D-AIBA/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4141` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBB](D-AIBB/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4182` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBC](D-AIBC/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4332` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBD](D-AIBD/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4455` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBE](D-AIBE/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4511` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBF](D-AIBF/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4796` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBG](D-AIBG/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4841` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBH](D-AIBH/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `5239` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBI](D-AIBI/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `5284` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| 🟧 [D-AIBJ](D-AIBJ/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `5293` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
-| [D-AILA](D-AILA/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `609` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILC](D-AILC/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `616` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILD](D-AILD/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `623` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILE](D-AILE/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `627` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILF](D-AILF/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `636` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILH](D-AILH/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `641` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILK](D-AILK/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `679` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILL](D-AILL/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `689` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILM](D-AILM/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `694` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILN](D-AILN/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `700` | – | 8.33 kHz | ✓ | with SB | – |
-| [D-AILU](D-AILU/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `744` | – | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBA](DAIBA/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4141` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBB](DAIBB/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4182` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBC](DAIBC/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4332` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBD](DAIBD/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4455` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBE](DAIBE/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | 🟧 old | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4511` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBF](DAIBF/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4796` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBG](DAIBG/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `4841` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBH](DAIBH/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `5239` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBI](DAIBI/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `5284` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| 🟧 [DAIBJ](DAIBJ/livery.cfg) | A319,CFM,WF | 🟧 modern | 🟧 ADIRS | hPa | ✓ | – | – | 🟧 ✓ | – | +1500 | `800` | `800` | frame | – | plug | 🟧 NAV | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | 🟧 ISIS | m | – | – | kg | European | 🟧 modern | ✓ | 🟧 checklist | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `5293` | 🟧 ✓ | 8.33 kHz | ✓ | with SB | – |
+| [DAILA](DAILA/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `609` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILC](DAILC/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `616` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILD](DAILD/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `623` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILE](DAILE/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `627` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILF](DAILF/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `636` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILH](DAILH/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `641` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILK](DAILK/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `679` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILL](DAILL/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `689` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILM](DAILM/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `694` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILN](DAILN/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `700` | – | 8.33 kHz | ✓ | with SB | – |
+| [DAILU](DAILU/livery.cfg) | A319,CFM,WF | classic | GNADIRS | hPa | ✓ | – | – | – | – | +1500 | `800` | `800` | frame | – | plug | GA TRK | – | – | ✓ | – | – | ✓ | ✓ | – | – | – | – | – | ✓ | ✓ | ✓ | ✓ | ✓ | – | – | new | – | – | – | single | yellow | – | analogue | m | – | – | kg | European | old | ✓ | none | Parker | `HUES_A319` | only 1 + 4 | off | – | – | SLIDE IN PARK | packs off | DCT | beep beep | `744` | – | 8.33 kHz | ✓ | with SB | – |
